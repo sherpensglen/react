@@ -1,0 +1,20 @@
+figure {
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 0px; }
+
+  figure img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 1s; }
+
+    figure figcaption {
+      font-size: 1.5rem;
+      color: #FAFAFA;
+      padding: 20px 0;
+      background-color: black; }
+     figure p.price {
+      font-size: 1.2rem;
+      color: #000000;
+      padding: 5px, 10px;
+      background-color: #FAFAFA; }

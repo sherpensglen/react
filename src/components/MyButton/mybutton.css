@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
+
+a.btn{
+  width: 200px;
+  height: 50px;
+  background-color: #000000;
+  font-family: "Hind", sans-serif;
+  color: #FAFAFA;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 50px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
