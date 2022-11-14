@@ -1,9 +1,6 @@
 import React from "react";
 import "./QtyCounter.css";
-
-
-
-
+import MyButton from "../MyButton/MyButton";
 
 function QtyCounter(props){
 
@@ -21,13 +18,15 @@ function QtyCounter(props){
         setCounter(counter-1);
         }
       }
-    return(       
+    return(
+      <div className="d-flex align-items-start justify-content-space-around flex-column">    
         <div className="d-flex align-items-center justify-content-center py-0 my-0">
-          <button className="btn btn-light" type="button" onClick={decrementar}>-1</button>
-          <span className="px-3">{counter}</span>
-          <button className="btn btn btn-light py-0 my-0" type="button" onClick={aumentar}>+1</button>
-        
-        </div>	        
+          <MyButton type="button" onClick={decrementar}>-</MyButton>
+          <span className="px-0">{counter}</span>
+          <MyButton type="button" onClick={aumentar}>+</MyButton>      
+        </div>	
+        <MyButton>Agregar al carrito</MyButton> 
+      </div>          
     )
 
 }

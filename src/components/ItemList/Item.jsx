@@ -1,16 +1,18 @@
 import React from "react";
 import MyButton from "../MyButton/MyButton";
 import "./item.css";
-import QtyCounter from "./QtyCounter";
+import {Link} from "react-router-dom";
 
-function Item({img,alt,caption,price}) {
+function Item({img,alt,caption,price,id}) {
+  const urlDetail = `/detail/${id}`;
   return (
     <figure>
-    <img src={img} alt={alt}></img>
+    <img src={"../"+img} alt={alt}></img>
 						<figcaption>{caption}</figcaption>
 						<p className="price">${price},00</p>
-             <QtyCounter stock={10}/>
-            <MyButton> Añadir al carrito</MyButton>
+              <Link to={urlDetail}>
+                <MyButton> Ver más</MyButton>
+              </Link>
     </figure>
   );
 }

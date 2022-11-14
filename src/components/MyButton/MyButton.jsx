@@ -2,11 +2,12 @@ import "./mybutton.css";
 
 function MyButton(props) {
   return (
-    <a
-      className="btn"
+    <button
+      onClick={props.onClick}
+      className="btn btn-dark"
     >
       {props.children}
-    </a>
+    </button>
   );
 }
 

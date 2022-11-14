@@ -3,6 +3,12 @@ figure {
   text-align: center;
   padding: 20px 0px; }
 
+  figure img{
+   border-radius: 5px; 
+   padding: 5px,5px;
+   width: 300px;
+  }
+
   figure img:hover {
     transform: scale(1.2);
     cursor: pointer;

@@ -1,21 +1,23 @@
 import React from "react";
 import './App.css';
 import ItemListContainer from "./components/ItemList/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import NavBar from "./components/NavBar/NavBar";
 import Head from "./components/Head/Head";
-function App() {
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 
-  //const styleH3 = { backgroundColor: "darkred", color: "white" };
-  //let titulo = <h3 style={styleH3}>Hola Comisión #34815!🚀</h3>;
+function App() { 
   return (
-    <>
-    <div className="App">
-        <Head/>
-        <NavBar/>
-        
-        <ItemListContainer greeting="Telefonos más mas populares"/>
-    </div>
-    </>
+    <BrowserRouter>
+    <Head/>
+    <NavBar/>
+    <Routes>
+      <Route path="/" element={<ItemListContainer/>} />
+      <Route path="/company/:company" element={<ItemListContainer />} />
+      <Route path="/detail/:id" element={<ItemDetailContainer />} />
+      <Route path="*" element={<h1>Error 404: Está página no existe</h1>} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
