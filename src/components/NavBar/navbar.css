@@ -7,9 +7,19 @@
 }
   #botonera div ul li a{
     border-radius: 20px; 
+    color:aliceblue;
   }
-    #botonera div ul li a:hover{
-      background-color: #280046; 
+  #botonera div ul li a:hover{
+    background-color: #280046; 
+    color:aliceblue;
+  }
+  #botonera div ul li ul{
+    background-color: #280046; 
+    color:aliceblue;
+  }
+    #botonera div ul li ul a:hover{
+      background-color: purple; 
+      color:aliceblue;
     }
     .logo img {
       height: auto;

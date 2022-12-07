@@ -1,0 +1,15 @@
+.textoDetalles p {
+    font-size: 1.2em;
+    line-height: 1em;
+    color: black;
+    padding: 5px;
+    font-family: "Hind", sans-serif; }
+  
+  #textoImportante {
+    font-weight: 600;
+    color: #280046; }
+
+    .logo img {
+      height: auto;
+      width: 200px;
+      padding: 10px 10px; }

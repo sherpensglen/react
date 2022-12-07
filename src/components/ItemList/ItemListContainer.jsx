@@ -1,40 +1,33 @@
 import { useState,useEffect } from "react";
-import Item from "./Item";
 import "./itemlist.css";
-import getItems from "../../Services/mockService";
+import {getItems,getItemsByCompany } from "../../Services/firestore";
 import { useParams } from "react-router-dom";
+import ItemList from "./ItemList";
+import Loader from "../Loaders/Loader";
 
-function ItemListContainer(props){
-  //use state inicializa el array con []
-   const[products,setProducts]= useState([]);
+function ItemListContainer(){
+   const[products,setProducts]= useState(null);
    const { company } = useParams();
 
-   async function getItemsAsync() {
-    let celulares = await getItems(company);
-    setProducts(celulares);
+   async function getItemsAsync(){
+    if(company){
+      let celulares = await getItemsByCompany(company);
+       setProducts(celulares);  
+    }else{
+      let celulares = await getItems();
+      setProducts(celulares);
+      
+    };
   }
-  useEffect(() => {
+  useEffect(() => { 
     getItemsAsync();
   },[company]);
 
   return (
-  <div>
-    <h1 className="pt-2 mt-3">{props.greeting}</h1>
-    <section className="masVendidos">
-    {products.map((product) => {
-        return (
-      <Item
-        key={product.id}
-        id={product.id}
-        img={product.img}
-        alt={product.title}
-        caption={product.title}
-        price={product.price}
-      />
-      );
-      })}     
-    </section>
-  </div>
+    <div>
+    <img src="../img/celulares.png" class="d-block w-100 pb-3 " alt="Banner de la pagina de celkap"/>
+    { products ? <ItemList products={products} /> : <Loader />}
+    </div>
   );
 }
 

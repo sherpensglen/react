@@ -1,0 +1,13 @@
+.redesExtras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  
+  .redes img {
+    text-decoration: none;
+    padding: 10px; }
+    .redes img:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+      transition: transform 1s; }

@@ -2,11 +2,10 @@ import React from "react";
 import "./QtyCounter.css";
 import MyButton from "../MyButton/MyButton";
 
-function QtyCounter(props){
+function QtyCounter({onAddToCart,stock}){
 
     //estado que modifica la variable counter en el render por funcion
     let [counter,setCounter] = React.useState(1);
-    let stock=props.stock;
 
     function aumentar(){
      if(counter<stock){
@@ -25,7 +24,7 @@ function QtyCounter(props){
           <span className="px-0">{counter}</span>
           <MyButton type="button" onClick={aumentar}>+</MyButton>      
         </div>	
-        <MyButton>Agregar al carrito</MyButton> 
+        <MyButton onClick={()=> onAddToCart(counter)}>Agregar al carrito</MyButton> 
       </div>          
     )
 

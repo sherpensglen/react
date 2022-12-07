@@ -1,6 +1,19 @@
 import QtyCounter from "../QtyCounter/QtyCounter";
-import MyButton from "../MyButton/MyButton";
+import { useContext } from "react";
+import { cartContext } from "../../context/cartContext";
+import swal from "sweetalert";
+
+
+
 function ItemDetail({product}){
+    const {addToCart} = useContext(cartContext); 
+    function onAddToCart(counter){
+        swal(`Agregaste ${counter} productos al carrito!`,"","success", {
+            button: "Aceptar",
+          });
+         addToCart(product,counter);
+       }
+
     return(
      <div className="d-flex justify-content-center align-items-center p-2 m-2">
       <div className="card mb-3 py-5 my-5 w-50 ">
@@ -13,7 +26,7 @@ function ItemDetail({product}){
                 <h5 className="card-title">{product.title}</h5>
                 <p className="card-text">{"$"+product.price+",00"}</p>
                 <p className="card-text">{product.info}</p>
-                <QtyCounter stock={10}/>
+                <QtyCounter onAddToCart={onAddToCart} stock={product.stock}/>
             </div>
         </div>
         </div>
