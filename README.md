@@ -1,5 +1,5 @@
 #ReadMe de la pagína Celkap
-![](img/logo.svg)
+![](pubic/img/logo.svg)
 
 # Objetivo
 Esta pagína se creo con la idea de mostrar las habilidades obtenidas en el curso de coderhouse
