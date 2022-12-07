@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+#ReadMe de la pagína Celkap
+![](img/logo.svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Objetivo
+Esta pagína se creo con la idea de mostrar las habilidades obtenidas en el curso de coderhouse
+Link a su curso de react: https://www.coderhouse.com.mx/online/reactjs
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Que se uso para crear la pagína
+- Se utilizo:
+ 1. HTML5
+ 2. CSS
+ 3. JAVASCRIPT
+ 4. React
+- Herramientas Usadas
+ 1. GIT Y GITHUB
+ 2. SASS
+ 3. Framework Bootstrap
+ 4. NPM
+ 5. Visual studio 
+ - Librerias
+ 1. wow.js
+ 2. animate.css
+ 3. sweetalert
+ 4. librerias de react (react,react-dom,react-router-dom,firebase)
+ - Base de datos
+ 1. Firebase
+ 
+# Extras usados
+Esta pagína se utilizaron las siguientes paginas para la optimización y diseño de la pagina principalmente relaciónadas a la las imagenes.
+- Herramientas de imagen
+ 1. Tiny panda(compresion de imagenes): https://tinypng.com/
+ 2. Photopea(edición de imagen y logo .svg): https://www.photopea.com/
+ 3. SvgBackgrounds(fondos svg freeuse) https://www.svgbackgrounds.com/
+ 4. Bancos de imagenes sin copyright
+ 
+ # Webhosting
+ 000webhost gratuito
+ - Link de la pagina subida: https://celkap1.000webhostapp.com/
